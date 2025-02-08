@@ -1,0 +1,109 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+
+.stopwatch {
+    font-size: 3em;
+    font-weight: bold;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#startStopButton {
+    background-color:green;
+    color: white;
+}
+
+#startStopButton:hover {
+    background-color: #218838;
+}
+
+button:nth-child(2) {
+    background-color: #dc3545;
+    color: white;
+}
+
+button:nth-child(2):hover {
+    background-color: #c82333;
+}
+
+button:nth-child(3) {
+    background-color: #007bff;
+    color: white;
+}
+
+button:nth-child(3):hover {
+    background-color: #0056b3;
+}
+
+
+.laps {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 400px;
+    text-align: left;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.laps li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.2em;
+}
+
+.laps li:last-child {
+    border-bottom: none;
+}
+
+
+@media (max-width: 600px) {
+    .stopwatch {
+        font-size: 2em;
+        padding: 15px;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+
+    .laps {
+        max-width: 90%;
+        font-size: 1em;
+    }
+}
